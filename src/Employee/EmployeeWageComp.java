@@ -5,7 +5,7 @@ import java.util.Random;
 public class EmployeeWageComp {
 
 	
-			public static void main(String args[]) {
+	public void employeeWageCalc(){
 
 				int attendance;
 				int employee_type;
@@ -55,6 +55,12 @@ public class EmployeeWageComp {
 						total_working_days++;
 			}
 				System.out.println("Total Monthly Wag="+total_wage);
+		}
+		
+
+			public static void main(String[] args) {
+			EmployeeWageComp employeeWageComp = new EmployeeWageComp();
+			employeeWageComp.employeeWageCalc();
 		}
 }
 	
