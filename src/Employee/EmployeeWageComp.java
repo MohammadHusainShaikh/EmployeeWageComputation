@@ -17,15 +17,23 @@ public class EmployeeWageComp {
 				System.out.println("Welcome to Employee Wage Computation Program");
 				
 				Random random = new Random();
-				employee_type = random.nextInt(9) % 2;
-				if(employee_type == 0) {
-					System.out.println("Employee is Part Time");
-					dailyWage = WAGE_PER_HR * PART_TIME_HR;
-				} else {
-					System.out.println("Employee is Full Time");
-					dailyWage = WAGE_PER_HR * FULL_TIME_HR;
+				attendance = random.nextInt(9) % 2;
+				if(attendance == 0) {
+					System.out.println("Employee is Absent");
 				}
-				System.out.println("Employee Wage = "+ dailyWage);
+				else {
+					System.out.println("Employee is Present");
+					
+					employee_type = random.nextInt(9) % 2;
+						if(employee_type == 0) {
+						System.out.println("Employee is Part Time");
+						dailyWage = WAGE_PER_HR * PART_TIME_HR;
+					} else {
+						System.out.println("Employee is Full Time");
+						dailyWage = WAGE_PER_HR * FULL_TIME_HR;
+					}
+					System.out.println("Employee Wage = "+ dailyWage);
+			}
 			}
 }
 	
